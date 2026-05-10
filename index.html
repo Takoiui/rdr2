@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Dead Redemption 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Crimson+Text:wght@400;600&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h1>RD<span>R</span>2</h1>
+  <ul>
+    <li><a href="#home">Головна</a></li>
+    <li><a href="#about">Про гру</a></li>
+    <li><a href="#characters">Герої</a></li>
+    <li><a href="#arsenal">Арсенал</a></li>
+    <li><a href="#world">Світ</a></li>
+    <li><a href="#gallery">Галерея</a></li>
+  </ul>
+</nav>
+
+<header id="home">
+  <article>
+    <span>Rockstar Games 2018</span>
+    <h2>Red Dead<em>Redemption</em></h2>
+    <strong>II</strong>
+    <i></i>
+    <p>Кінець епохи дикого заходу. Історія про честь, зраду та спокуту серед останніх днів лихих банд Америки.</p>
+    <div class="btn-group">
+      <a href="#about" class="btn btn-r">Дізнатись більше</a>
+      <a href="#characters" class="btn btn-o">Герої гри</a>
+    </div>
+  </article>
+</header>
+
+<main>
+
+  <section id="about" data-label="Про гру">
+    <article>
+      <div class="reveal">
+        <h2>Остання <em>епоха</em> дикого заходу</h2>
+        <p>Red Dead Redemption 2 епічна пригода у серці Америки 1899 року. Коли дикий захід згасає, Артур Морган та банда Ван дер Лінде борються за виживання у світі, де федеральні агенти загнали їх у кут.</p>
+        <p>Величезний живий відкритий світ із сотнями годин контенту, унікальними персонажами та динамічною погодою. Кожен твій вчинок має наслідки система честі змінює реакцію всього світу навколо.</p>
+        <a href="#characters" class="btn btn-r"><span>Познайомитись з героями</span></a>
+      </div>
+      <figure class="reveal delay">
+        <img src="images/ArthurMorgan.png" alt="Артур Морган">
+        <figcaption><strong>9.8</strong><small>Рейтинг IGN</small></figcaption>
+      </figure>
+    </article>
+    <ul class="stats reveal delay">
+      <li><strong data-c="63">0</strong><small>Місій у сюжеті</small></li>
+      <li><strong data-c="200">0</strong><small>+ видів тварин</small></li>
+      <li><strong data-c="60">0</strong><small>Годин основного сюжету</small></li>
+      <li><strong data-c="185">0</strong><small>Видів зброї та предметів</small></li>
+    </ul>
+  </section>
+
+  <section id="characters" data-label="Персонажі">
+    <h2 class="reveal">Три <em>головних</em> герої</h2>
+    <ul class="chars reveal delay">
+      <li>
+        <img src="images/ArthurMorgan.png" alt="Артур Морган">
+        <article>
+          <em>Протагоніст</em>
+          <h3>Артур Морган</h3>
+          <i></i>
+          <p>Один із найстарших членів банди Ван дер Лінде. Сильний, досвідчений і жорсткий але здатний на справжнє співчуття. Його майбутнє залежить від вибору гравця.</p>
+          <small>→ Головний герой</small>
+        </article>
+      </li>
+      <li>
+        <img src="images/datch.jpg" alt="Датч ван дер Лінде">
+        <article>
+          
+          <em>Ватажок банди</em>
+          <h3>Датч ван дер Лінде</h3>
+          <i></i>
+          <p>Харизматичний лідер та ідеаліст, що вірить у свободу. Під тиском обставин поступово втрачає розум. Трагічна та небезпечна фігура одночасно.</p>
+          <small>→ Антагоніст / Союзник</small>
+        </article>
+      </li>
+      <li>
+        <img src="images/Jonh.jpg" alt="Джон Марстон">
+        <article>
+         
+          <em>Член банди</em>
+          <h3>Джон Марстон</h3>
+          <i></i>
+          <p>Головний герой першої частини. У RDR2 молодий член банди та батько, що шукає шлях до чесного життя. Його трагічна доля відома з першої гри.</p>
+          <small>→ Ключовий персонаж</small>
+        </article>
+      </li>
+    </ul>
+  </section>
+
+  <section id="arsenal" data-label="Озброєння">
+    <h2 class="reveal">Арсенал <em>стрільця</em></h2>
+    <div class="tabs">
+      <button class="tab active" onclick="filterW('all', this)">Все</button>
+      <button class="tab" onclick="filterW('pistol', this)">Пістолети</button>
+      <button class="tab" onclick="filterW('rifle', this)">Гвинтівки</button>
+      <button class="tab" onclick="filterW('shotgun', this)">Дробовики</button>
+      <button class="tab" onclick="filterW('melee', this)">Холодна</button>
+    </div>
+    <ul id="wgrid">
+      <li data-cat="pistol">
+        <img src="images/relik.png" alt="Schofield Revolver">
+        <article>
+          <em>Пістолет / Револьвер</em>
+          <h3>Schofield Revolver</h3>
+          <p>Легендарний поліцейський револьвер один з найкращих у грі. Відрізняється швидкострільністю та точністю, ідеальний для дуелей.</p>
+          <div class="bars">
+            <div class="bar"><strong>Шкода</strong><span><i style="--w:70%"></i></span></div>
+            <div class="bar"><strong>Дальність</strong><span><i style="--w:55%"></i></span></div>
+            <div class="bar"><strong>Швидкість</strong><span><i style="--w:80%"></i></span></div>
+          </div>
+        </article>
+      </li>
+      <li data-cat="rifle">
+        <img src="images/vintovka.png" alt="Lancaster Repeater">
+        <article>
+          <em>Гвинтівка</em>
+          <h3>Lancaster Repeater</h3>
+          <p>Надійна гвинтівка зі швидким перезарядженням. Ідеальна для середніх дистанцій і найпоширеніша зброя серед членів банди.</p>
+          <div class="bars">
+            <div class="bar"><strong>Шкода</strong><span><i style="--w:75%"></i></span></div>
+            <div class="bar"><strong>Дальність</strong><span><i style="--w:80%"></i></span></div>
+            <div class="bar"><strong>Швидкість</strong><span><i style="--w:65%"></i></span></div>
+          </div>
+        </article>
+      </li>
+      <li data-cat="shotgun">
+        <img src="images/shotgun.png" alt="Double-Barrel Shotgun">
+        <article>
+          <em>Дробовик</em>
+          <h3>Double-Barrel Shotgun</h3>
+          <p>Двостволка смертоносна на близькій дистанції. Два постріли вирішують будь-який конфлікт у зачиненому просторі.</p>
+          <div class="bars">
+            <div class="bar"><strong>Шкода</strong><span><i style="--w:95%"></i></span></div>
+            <div class="bar"><strong>Дальність</strong><span><i style="--w:18%"></i></span></div>
+            <div class="bar"><strong>Швидкість</strong><span><i style="--w:55%"></i></span></div>
+          </div>
+        </article>
+      </li>
+      <li data-cat="melee">
+        <img src="images/knife.png" alt="knife">
+        <article>
+          <em>Холодна зброя</em>
+          <h3>Мисливський ніж</h3>
+          <p>Вірний супутник у темряві. Використовується для прихованих вбивств, обробки дичини та виживання в дикій природі.</p>
+          <div class="bars">
+            <div class="bar"><strong>Шкода</strong><span><i style="--w:65%"></i></span></div>
+            <div class="bar"><strong>Дальність</strong><span><i style="--w:5%"></i></span></div>
+            <div class="bar"><strong>Швидкість</strong><span><i style="--w:92%"></i></span></div>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </section>
+
+  <section id="world" data-label="Світ гри">
+    <h2 class="reveal">Землі <em>дикого</em> заходу</h2>
+    <ul class="locs">
+      <li class="loc" style="background-image: url('images/gorod.webp')">
+        <article><strong>  РЕГІОН</strong><h3>Нью-Ганновер</h3><p>Просторі рівнини та густі ліси на півночі. Тут проходить більша частина сюжету банди.</p></article>
+      </li>
+      <li class="loc loc-2" style="background-image: url('images/Lenora.webp')">
+        <article><strong>  РЕГІОН</strong><h3>Леано́р</h3><p>Таємничі болота півдня з унікальною фауною та небезпечними таємницями у тумані.</p></article>
+      </li>
+      <li class="loc loc-3" style="background-image: url('images/SaintDenis.webp')">
+        <article><strong>  РЕГІОН</strong><h3>Сен-Дені</h3><p>Найбільше місто гри, натхненне Новим Орлеаном. Розкіш та злочинність пліч-о-пліч.</p></article>
+      </li>
+      <li class="loc loc-4" style="background-image: url('images/Ambarion.webp')">
+        <article><strong>  РЕГІОН</strong><h3>Скелясті гори</h3><p>Засніжені вершини та крижані ущелини. Суворий клімат і рідкісні види тварин.</p></article>
+      </li>
+      <li class="loc loc-5" style="background-image: url('images/Pole.webp')">
+        <article><strong>  РЕГІОН</strong><h3>Амбаріно</h3><p>Дикі та негостинні землі. Лише найвідчайдушніші наважуються подорожувати тут.</p></article>
+      </li>
+    </ul>
+  </section>
+
+  <section id="gallery" data-label="Галерея">
+    <h2 class="reveal">Моменти <em>епохи</em></h2>
+    <ul class="gallery reveal delay">
+      <li><img src="images/ArthurMorgan.png" alt="Артур Морган"><span>+</span></li>
+      <li><img src="images/Jonh.jpg"    alt="Джон Марстон"><span>+</span></li>
+      <li><img src="images/datch.jpg"   alt="Датч ван дер Лінде"><span>+</span></li>
+      <li><img src="images/gorod.webp"  alt="Місто"><span>+</span></li>
+      <li><img src="images/relik.png"   alt="Зброя"><span>+</span></li>
+    </ul>
+  </section>
+
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
